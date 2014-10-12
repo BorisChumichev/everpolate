@@ -22,10 +22,10 @@
 Evaluates the interpolating polynomial on the set of distinct numbers 'x0,..., xn' at the
 number 'x' for the function 'f'
 
-	```javascript
-	var polynomial = require('everpolate').polynomial
-	//extrapolation
-	polynomial([3], [1, 2, 3], [1, 3, 2]) // → [-2]
+```javascript
+var polynomial = require('everpolate').polynomial
+//extrapolation
+polynomial([3], [1, 2, 3], [1, 3, 2]) // → [-2]
 	
 
 
