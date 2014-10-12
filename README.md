@@ -18,9 +18,14 @@
 
 ## Documatation
 #### Polynomial Interpolation
-######polynomial(pointsToEvaluate, functionValuesX, functionValuesY) → {Array}
+######`polynomial(pointsToEvaluate, functionValuesX, functionValuesY)`
 Implements [Neville’s Iterated Interpolation algorithm](http://en.wikipedia.org/wiki/Neville's_algorithm). Evaluates the interpolating polynomial on the set of distinct numbers 'x0,..., xn' at the
-number 'x' for the function 'f'. 
+number 'x' for the function 'f'.
+
+Parameters:
+* `pointsToEvaluate` - Array or Number
+* `functionValuesX` - Array
+* `functionValuesY` - Array
 
 ```javascript
 var polynomial = require('everpolate').polynomial
