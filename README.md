@@ -2,7 +2,7 @@
 
 #### Synopsis
 
-*Everpolate* provides a set of common interpolation algorithms implementations. Implementations given for interpolation are also implementations for extrapolation. Since it's written in JavaScript, *everpolate* could be used for web browser or Node.js applications. 
+*Everpolate* provides a set of common interpolation algorithms implementations. Implementations given for interpolation are also implementations for extrapolation. Since it's written in JavaScript, *everpolate* could be used for web browser, Node.js and so forth. 
 
 #### Features:
 
@@ -31,5 +31,9 @@ number 'x' for the function 'f'.
 
 ```javascript
 var polynomial = require('everpolate').polynomial
+//interpolation
+polynomial([0.021, 0.022], [0, 1.1, 2.4], [12, 431, 39])
+// → [ 26.442248863636365, 27.123719230769233 ]
 //extrapolation
-polynomial([3], [0, 1, 2], [1, 3, 2]) // → [-2]
+polynomial([3], [0, 1, 2], [1, 3, 2]) 
+// → [-2]
