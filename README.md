@@ -37,10 +37,11 @@ polynomial([0.021, 0.022], [0, 1.1, 2.4], [12, 431, 39])
 //for extrapolation use same syntax
 polynomial([3], [0, 1, 2], [1, 3, 2]) 
 // → [-2]
+```
 
 #### Linear Interpolation
 #####`linear(pointsToEvaluate, functionValuesX, functionValuesY)`
-Evaluates the interpolating line or lines on the set of distinct numbers 'x0,..., xn' at the
+Evaluates interpolating line (or lines) on the set of distinct numbers 'x0,..., xn' at the
 number 'x' for the function 'f'.
 
 **Parameters:**
