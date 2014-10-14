@@ -29,6 +29,7 @@ number 'x' for the function 'f'.
 
 **Returns:** Array
 
+**Example:**
 ```javascript
 var polynomial = require('everpolate').polynomial
 //interpolation
@@ -51,12 +52,13 @@ number 'x' for the function 'f'.
 
 **Returns:** Array
 
+**Example:**
 ```javascript
-var polynomial = require('everpolate').polynomial
+var linear = require('everpolate').linear
 //interpolation
 linear([2, 0, 8], [-2, 0, 6, 8], [4, 0, 3, -3])
 // → [1, 0, -3]
 //extrapolation works as well
-linear(3, [0, 1, 2], [1, 3, 2]), 
+linear(3, [0, 1, 2], [1, 3, 2]) 
 // → [1]
 
