@@ -16,7 +16,7 @@
 * Multidimensional Interpolation
 * Neural Network-based Interpolation
 
-## Documatation
+## Documentation
 #### Polynomial Interpolation
 #####`polynomial(pointsToEvaluate, functionValuesX, functionValuesY)`
 Implements [Neville’s Iterated Interpolation algorithm](http://en.wikipedia.org/wiki/Neville's_algorithm). Evaluates the interpolating polynomial on the set of distinct numbers 'x0,..., xn' at the
