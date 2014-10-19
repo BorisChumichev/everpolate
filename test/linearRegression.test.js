@@ -16,7 +16,11 @@ describe('Linear regression function', function () {
   })
 
   it('Returns a function which computes regression at a given x-value', function () {
-    assert.strictEqual(regression.evaluate(2), 4)
+    assert.deepEqual(regression.evaluate(2), [4])
+  })
+
+  it('Returns a function which computes regression at a set of x-values', function () {
+    assert.deepEqual(regression.evaluate([2, 3.5]), [4, 5.5])
   })
 
 })

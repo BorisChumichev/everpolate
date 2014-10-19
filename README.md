@@ -8,13 +8,7 @@
 
 * Polynomial Interpolation
 * Linear Interpolation
-
-#### Not implemented yet:
-
-* Rational Function Interpolation 
-* Cubic Spline Interpolation
-* Multidimensional Interpolation
-* Neural Network-based Interpolation
+* Linear Regression
 
 ## Documentation
 #### Polynomial Interpolation
