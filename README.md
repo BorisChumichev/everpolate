@@ -8,7 +8,8 @@
 
 * Polynomial Interpolation
 * Linear Interpolation
-* Linear Regression
+* Linear Regression 
+* Step Function Interpolation
 
 ## Documentation
 #### Polynomial Interpolation
