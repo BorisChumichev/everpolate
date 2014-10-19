@@ -8,6 +8,8 @@
 
 * Polynomial Interpolation
 * Linear Interpolation
+* Linear Regression 
+* Step Function Interpolation
 
 #### Not implemented yet:
 
