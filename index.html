@@ -23,7 +23,7 @@
             extensions: ["tex2jax.js"],
             "HTML-CSS": {
                 preferredFont: "STIX",
-                scale: 90
+                scale: 85
             }
         });
     </script>
@@ -93,11 +93,13 @@ polynomial([3], [0, 1, 2], [1, 3, 2])
 // → [-2]</code></pre>
     <h3><a name="regression"></a>Linear Regression</h3>
     <code>linearRegression(</code>$X$<code> {Array}, </code>$Y$<code> {Array}) → {Object}</code>
-    <p>Estimates linear regression $f(x) = ax + b$ for the set of regressors $X$ and the set of regressands $Y$, returns an Object which has <code>slope</code>, <code>intercept</code>, <code>rSquared</code> and <code>evaluate</code> properties. <code>slope</code> property represents $a$ parameter of $f(x)$ equation, <code>intercept</code> property represents $b$ parameter of $f(x)$ equation. <code>rSquared</code> property represents the square of the Pearson product moment correlation coefficient through data points in $X$ and $Y$. <code>evaluate</code> property is a pointer to function which can be used to evaluate regression at a arbitrary number $x$.</p>
+    <p>Estimates linear regression $f(x) = ax + b$ for the set of regressors $X$ and the set of regressands $Y$, returns an Object which has <code>slope</code>, <code>intercept</code>, <code>rSquared</code> and <code>evaluate</code> properties. <code>slope</code> property represents $a$ parameter of $f(x)$ equation, <code>intercept</code> property represents $b$ parameter of $f(x)$ equation. <code>rSquared</code> property represents the square of the Pearson product moment correlation coefficient through data points in $X$ and $Y$:</p>
+    <p>$$ r^{2} = \left(\frac{N \sum x_{i} y_{i} - \sum x_{i} \sum y_{i}}{\sqrt{N \sum x_{i}^{2} - \left(\sum x_{i}\right)^{2}} \sqrt{N \sum y_{i}^{2} - \left(\sum y_{i}\right)^{2}} }\right)^2 $$</p>
+    <p><code>evaluate</code> property is a pointer to function which can be used to evaluate regression at a arbitrary number $x$.</p>
     <pre><code>var linearRegression = require('everpolate').linearRegression
-var xValues = [0, 1, 2, 3, 4, 5]
-, yValues = [2, 3, 4, 5, 6, 7]
-, regression = linearRegression(xValues, yValues)
+  , xValues = [0, 1, 2, 3, 4, 5]
+  , yValues = [2, 3, 4, 5, 6, 7]
+  , regression = linearRegression(xValues, yValues)
 
 regression.evaluate([2, 3.5])
 // → [4, 5.5]
