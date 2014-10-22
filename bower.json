@@ -1,0 +1,25 @@
+{
+  "name": "everpolate",
+  "version": "0.0.2",
+  "homepage": "http://borischumichev.github.io/everpolate/",
+  "authors": [
+    "Boris Chumichev <boris362@yandex.ru>"
+  ],
+  "description": "Numerical interpolation and extrapolation JavaScript library",
+  "keywords": [
+    "approximation",
+    "interpolation",
+    "extrapolation",
+    "regression",
+    "Pearson",
+    "polynomial",
+    "Lagrange"
+  ],
+  "main": "everpolate.browserified.min.js",
+  "ignore": [
+    "node_modules",
+    "test"
+  ],
+  "dependencies": {
+  }
+}
