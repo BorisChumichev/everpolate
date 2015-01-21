@@ -1,6 +1,6 @@
 {
   "name": "everpolate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Interpolation and extrapolation library",
   "main": "lib/everpolate.js",
   "scripts": {

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var assert = require("chai").assert
   , polynomial = require("../lib/everpolate.js").polynomial
