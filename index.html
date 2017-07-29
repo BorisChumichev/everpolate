@@ -38,15 +38,15 @@
     <p>Everpolate provides a set of common interpolation algorithms implementations. Implementations given for interpolation <span class="emphasis">are also implementations for extrapolation</span>. It is written in JavaScript, so it could be used in web browser, Node and so forth. </p>
     <a href="https://github.com/BorisChumichev/everpolate">Go to GitHub repo</a>
     <h2>Installation & Usage</h2>
-    <p>In order to use it in web browser <a target="_blank" href="https://raw.githubusercontent.com/BorisChumichev/everpolate/master/everpolate.browserified.min.js">download</a> browserified UMD (Universal Module Definition) version, then just plop it into a single script tag in some html:</p>
+    <p>If you want to use everpolate with module bundler such as webpack or in Node environment just install it via npm or yarn:</p>
+    <pre><code>$ npm install everpolate</code></pre>
+    <p>Or you can just <a target="_blank" href="https://raw.githubusercontent.com/BorisChumichev/everpolate/master/everpolate.browserified.min.js">download</a> browserified UMD version and then just plop it into a single script tag in some html:</p>
 <pre><code>&lt;html&gt;
     &lt;body&gt;
         &lt;script src=&quot;everpolate.browserified.min.js&quot;&gt;&lt;/script&gt;
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
     <p>If a module system is detected in the host environment, it will be used (e.g RequireJS). Otherwise a window global named <code>everpolate</code> will be exported.</p>
-    <p>If you want to use everpolate in Node.js just install it via npm:</p>
-    <pre><code>$ npm install everpolate</code></pre>
     <h2>Documentation</h2>
     <h4>Contents</h4>
     <ol>
@@ -98,7 +98,7 @@ polynomial([3], [0, 1, 2], [1, 3, 2])
     <code>linearRegression(</code>$X$<code> {Array}, </code>$Y$<code> {Array}) → {Object}</code>
     <p>Estimates linear regression $f(x) = ax + b$ for the set of regressors $X$ and the set of regressands $Y$, returns an Object which has <code>slope</code>, <code>intercept</code>, <code>rSquared</code> and <code>evaluate</code> properties. <code>slope</code> property represents $a$ parameter of $f(x)$ equation, <code>intercept</code> property represents $b$ parameter of $f(x)$ equation. <code>rSquared</code> property represents the square of the Pearson product moment correlation coefficient through data points in $X$ and $Y$:</p>
     <p>$$ r^{2} = \left(\frac{N \sum x_{i} y_{i} - \sum x_{i} \sum y_{i}}{\sqrt{N \sum x_{i}^{2} - \left(\sum x_{i}\right)^{2}} \sqrt{N \sum y_{i}^{2} - \left(\sum y_{i}\right)^{2}} }\right)^2 $$</p>
-    <p><code>evaluate</code> property is a pointer to function which can be used to evaluate regression at a arbitrary number $x$.</p>
+    <p><code>evaluate</code> property is a pointer to function which can be used to evaluate regression at an arbitrary number $x$.</p>
     <pre><code>var linearRegression = require('everpolate').linearRegression
   , xValues = [0, 1, 2, 3, 4, 5]
   , yValues = [2, 3, 4, 5, 6, 7]
