@@ -1,5 +1,3 @@
-![everpolate](https://raw.githubusercontent.com/BorisChumichev/everpolate/master/everpolate-logo.png)
-
 For docs and more information go [to GitHub project page](http://borischumichev.github.io/everpolate/).
 
 #### Synopsis
@@ -10,7 +8,7 @@ For usage with Meteor look at [everpolate-meteor](https://github.com/rmuratov/ev
 
 #### Features:
 
-* Step Function Interpolation
-* Linear Interpolation
-* Polynomial Interpolation
-* Linear Regression 
+* [Step Function Interpolation](http://borischumichev.github.io/everpolate/#step)
+* [Linear Interpolation](http://borischumichev.github.io/everpolate/#linear)
+* [Polynomial Interpolation](http://borischumichev.github.io/everpolate/#poly)
+* [Linear Regression](http://borischumichev.github.io/everpolate/#regression)
