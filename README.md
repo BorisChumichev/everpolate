@@ -8,6 +8,7 @@ For usage with Meteor look at [everpolate-meteor](https://github.com/rmuratov/ev
 
 #### Features:
 
+* [Value Interpolation](http://borischumichev.github.io/everpolate/#value)
 * [Step Function Interpolation](http://borischumichev.github.io/everpolate/#step)
 * [Linear Interpolation](http://borischumichev.github.io/everpolate/#linear)
 * [Polynomial Interpolation](http://borischumichev.github.io/everpolate/#poly)
