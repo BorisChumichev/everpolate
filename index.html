@@ -171,6 +171,7 @@
       <h2>Documentation</h2>
       <h4>Contents</h4>
       <ol>
+        <li><a href="#value" id="step">Value Interpolation</a></li>
         <li><a href="#step">Step Function Interpolation</a></li>
         <li><a href="#linear">Linear Interpolation</a></li>
         <li><a href="#poly">Polynomial Interpolation</a></li>
@@ -189,6 +190,19 @@
           that $y_{1}=f(x_{1}),...,y_{N}=f(x_{N})$.
         </li>
       </ul>
+      <h3><a name="value"></a>Value Interpolation</h3>
+      <code>value(</code>$x$<code> {Array|Number}, </code>$X$<code>
+        {Array}, </code
+      >$Y$<code> {Array}, </code>$c$<code> {Any}) → {Array}</code>
+      <p>
+        Interpolates missing points for the function $f(x)$ with a constant value.
+      </p>
+      <pre><code>var value = require('everpolate').value
+value([-12, 3.3, 9], [-12, -2, 0, 3.3, 6, 8], [10, 4, 0, 1, 3, -3], null)
+// → [10, 1, null]
+value([-1e-6, 0, 1e-6], [0], [Infinity], 0)
+// → [0, Infinity, 0]
+</code></pre>
       <h3><a name="step"></a>Step Function Interpolation</h3>
       <code>step(</code>$x$<code> {Array|Number}, </code>$X$<code>
         {Array}, </code
