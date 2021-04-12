@@ -1,5 +1,5 @@
 html, body {
-  font-family: 'Open Sans' sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   color: #5d5d5d;
   font-size: 16px;
@@ -65,7 +65,7 @@ h1 i {
 h1 span {
   position: absolute;
   font-size: 0.23em;
-  font-family: 'Open Sans' sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.1em;
   font-weight: 200;
   top: 130px;
