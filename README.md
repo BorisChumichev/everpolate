@@ -1,4 +1,4 @@
-For docs and more information go [to GitHub project page](http://borischumichev.github.io/everpolate/).
+For docs and more information go [to GitHub project page](https://borischumichev.github.io/everpolate/).
 
 #### Synopsis
 
